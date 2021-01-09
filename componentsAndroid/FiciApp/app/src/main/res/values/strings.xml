@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Fici Garage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="component_list_fragment_label">Components List</string>
+    <string name="component_edit_fragment_label">Component Edit</string>
+    <string name="edit">Edit component</string>
+    <string name="save">Save component</string>
+
+    <!-- hints for edit texts-->
+    <string name="hint_component_name">Component name</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_date">Release date</string>
+    <string name="hint_inStock">In Stock</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+    <string name="login_string">log in</string>
+    <string name="logout_string">log out</string>
+    <string name="delete">delete</string>
+    <string name="invalid_username">Username is not valid!</string>
+    <string name="invalid_password">Password cannot be empty!</string>
+    <string name="release_date">release date:</string>
+    <string name="search">search</string>
+    <string name="not_inStock">Not in Stock</string>
+    <string name="active_network">online</string>
+    <string name="inactive_network">offline</string>
+    <string name="take_picture">take picture</string>
+    <string name="google_maps_api_key">AIzaSyBUK30T2YRlkUsd2wPg_15CSxKz57i44tU</string>
+    <string name="set_location">set location</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="locate">locate</string>
+</resources>

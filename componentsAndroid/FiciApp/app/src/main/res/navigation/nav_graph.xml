@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_component_list">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.ficiapp.auth.login.LoginFragment"
+        android:label="@string/login_string"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/fragment_component_list"
+        android:name="com.example.ficiapp.components.componentList.ComponentListFragment"
+        android:label="@string/component_list_fragment_label"
+        tools:layout="@layout/fragment_component_list">
+
+        <action
+            android:id="@+id/action_ComponentListFragment_to_ComponentEditFragment"
+            app:destination="@id/fragment_edit_component" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_edit_component"
+        android:name="com.example.ficiapp.components.componentEdit.ComponentEditFragment"
+        android:label="@string/component_edit_fragment_label"
+        tools:layout="@layout/fragment_edit_component">
+
+        <action
+            android:id="@+id/action_ComponentEditFragment_to_ComponentListFragment"
+            app:destination="@id/fragment_component_list" />
+        <argument
+            android:name="component"
+            app:argType="com.example.ficiapp.components.data.Component"
+            app:nullable="true" />
+    </fragment>
+</navigation>
