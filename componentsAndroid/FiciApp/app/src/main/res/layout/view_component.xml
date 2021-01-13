@@ -37,7 +37,7 @@
             android:id="@+id/starRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_baseline_stars_24" />
+            app:srcCompat="@drawable/ic_baseline_in_stock_24" />
 
         <TextView
             android:id="@+id/lat"

@@ -69,6 +69,16 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.35" />
 
+    <ImageView
+        android:id="@+id/computer"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="@dimen/dim_100dp"
+        android:src="@drawable/ic_baseline_desktop_mac_24"
+        app:layout_constraintBottom_toTopOf="@id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="match_parent"
