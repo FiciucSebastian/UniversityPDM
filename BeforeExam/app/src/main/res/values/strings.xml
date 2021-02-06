@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BeforeExam</string>
+    <string name="hint_username">Username</string>
+
+    <string name="login_string">log in</string>
+    <string name="invalid_username">Username is not valid!</string>
+</resources>

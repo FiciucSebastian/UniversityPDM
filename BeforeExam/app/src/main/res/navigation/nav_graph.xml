@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragment_login">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.beforeexam.auth.login.LoginFragment"
+        android:label="@string/login_string"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_student_fragment"
+            app:destination="@id/student_fragment" />
+        <action
+            android:id="@+id/action_fragment_login_to_profesor_fragment"
+            app:destination="@id/profesor_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profesor_fragment"
+        android:name="com.example.beforeexam.profesor.ProfesorListFragment"
+        tools:layout="@layout/profesor_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/student_fragment"
+        android:name="com.example.beforeexam.student.StudentFragment"
+        tools:layout="@layout/student_fragment">
+    </fragment>
+
+</navigation>
