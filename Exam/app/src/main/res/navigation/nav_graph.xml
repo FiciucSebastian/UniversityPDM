@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_task_list">
+
+    <fragment
+        android:id="@+id/fragment_task_list"
+        android:name="com.example.exam.fragment.TaskListFragment"
+        android:label="@string/task_list_fragment_label"
+        tools:layout="@layout/fragment_task_list">
+
+        <action
+            android:id="@+id/action_TaskListFragment_to_TaskEditFragment"
+            app:destination="@id/fragment_edit_task" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_edit_task"
+        android:name="com.example.exam.fragment.TaskEditFragment"
+        android:label="@string/task_edit_fragment_label"
+        tools:layout="@layout/fragment_edit_task">
+
+        <action
+            android:id="@+id/action_TaskEditFragment_to_TaskListFragment"
+            app:destination="@id/fragment_task_list" />
+        <argument
+            android:name="task"
+            app:argType="com.example.exam.model.Task"
+            app:nullable="true" />
+    </fragment>
+</navigation>
